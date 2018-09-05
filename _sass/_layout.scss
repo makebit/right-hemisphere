@@ -154,3 +154,9 @@ html{
     height: 60px;
     background-color: #000000;
 }
+
+@media (min-width: 992px){
+    .footer {
+    line-height: 60px;
+    }
+}
