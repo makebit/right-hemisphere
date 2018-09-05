@@ -1,0 +1,20 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<div class="home">
+  <h3>Do It Yourself Hardware & Software</h3>
+  <ul class="post-list">
+
+    {% for post in site.categories["project"] %}
+    <li>
+      <h2>
+        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} // </div><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+    </li>
+    {% endfor %}
+  </ul>
+
+</div>
