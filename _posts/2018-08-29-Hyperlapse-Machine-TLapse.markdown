@@ -6,6 +6,9 @@ categories: project
 tags: tools 
 ---
 
+![](/assets/projects/tlapse/compressed/timelapse_1.JPG)
+![](/assets/projects/tlapse/compressed/timelapse_2.JPG)
+
 TLapse è lo strumento portatile auto costruito per la registrazione di timelapse in movimento (hyperlapse) sull'asse di pan. E' adatto ad action cam tipo GoPro, Yi, ecc. 
 
 Permette di registrare timelapse parametrizzati secondo
@@ -33,8 +36,8 @@ Utilizzo:
 3. settaggio durata timelapse in minuti, angolo di rotazione e intervallo
 4. fine!
 
-Scatola stampata con stampante 3D (progettata con SketchUp): <a href="/file/box">download</a>
+Scatola stampata con stampante 3D (progettata con SketchUp): [Download](/assets/projects/tlapse//Timelapse.skp)
 
-Codice software (Arduino): <a href="/file/code">download</a>
+Codice software (Arduino): [Download](/assets/projects/tlapse//Timelapse.ino)
 
 Per ulteriori informazioni contattami <mailto:to.right.hemisphere@gmail.com>
