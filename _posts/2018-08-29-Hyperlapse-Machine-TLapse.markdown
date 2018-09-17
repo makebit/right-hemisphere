@@ -36,8 +36,12 @@ Utilizzo:
 3. settaggio durata timelapse in minuti, angolo di rotazione e intervallo
 4. fine!
 
-Scatola stampata con stampante 3D (progettata con SketchUp): [Download](/assets/projects/tlapse//Timelapse.skp)
+---
 
-Codice software (Arduino): [Download](/assets/projects/tlapse//Timelapse.ino)
+<a style="color:red;" href="https://github.com/makebit/TLapse/">Repository</a>
+
+Scatola stampata con stampante 3D (progettata con SketchUp): <a style="color:red;" href="https://github.com/makebit/TLapse/blob/master/3D%20Model/Timelapse.skp">Download</a>
+
+Codice software (Arduino): <a style="color:red;" href="https://github.com/makebit/TLapse/blob/master/Code/Timelapse/Timelapse.ino">Download</a>
 
 Per ulteriori informazioni contattami <mailto:to.right.hemisphere@gmail.com>
