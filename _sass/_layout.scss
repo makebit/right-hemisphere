@@ -241,3 +241,22 @@ html{
         background-color: #A52A2A;
     }
 }
+
+#v003{
+    .description{
+        font-family: "Josefin Slab";
+        color: #000000;
+        a {
+            color: #000000;
+        }
+        a:hover {
+            color: #000000;
+        }
+        a:visited {
+            color: #000000;
+        }
+    }
+    .description, .screen {
+        background-color: #1891b8;
+    }
+}
