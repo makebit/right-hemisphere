@@ -1,11 +1,12 @@
 body {
-  padding-top: 54px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-  margin-bottom: 60px;
+    padding-top: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin-bottom: 60px;
+    background-color: #000000;
 }
 
-.color-change{
+.color-change {
     -webkit-animation: color-change-animation 5s infinite;
     -moz-animation: color-change-animation 5s infinite;
     -o-animation: color-change-animation 5s infinite;
@@ -14,160 +15,292 @@ body {
 }
 
 @-webkit-keyframes color-change-animation {
-    0% { color: #000000; }
-    45% { color: #737373; }
-    50% { color: #ffffff; }
-    55% { color: #737373; }
-    100% { color: #000000; }
-}
-@-moz-keyframes color-change-animation {
-    0% { color: #000000; }
-    45% { color: #737373; }
-    50% { color: #ffffff; }
-    55% { color: #737373; }
-    100% { color: #000000; }
-}
-@-ms-keyframes color-change-animation {
-    0% { color: #000000; }
-    45% { color: #737373; }
-    50% { color: #ffffff; }
-    55% { color: #737373; }
-    100% { color: #000000; }
-}
-@-o-keyframes color-change-animation {
-    0% { color: #000000; }
-    45% { color: #737373; }
-    50% { color: #ffffff; }
-    55% { color: #737373; }
-    100% { color: #000000; }
-}
-@keyframes color-change-animation {
-    0% { color: #000000; }
-    45% { color: #737373; }
-    50% { color: #ffffff; }
-    55% { color: #737373; }
-    100% { color: #000000; }
+    0% {
+        color: lawngreen
+    }
+
+    15% {
+        color: red;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    45% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    75% {
+        color: white;
+    }
+
+    100% {
+        color: black
+    }
 }
 
-hr{
+@-moz-keyframes color-change-animation {
+    0% {
+        color: lawngreen
+    }
+
+    15% {
+        color: red;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    45% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    75% {
+        color: white;
+    }
+
+    100% {
+        color: black
+    }
+}
+
+@-ms-keyframes color-change-animation {
+    0% {
+        color: lawngreen
+    }
+
+    15% {
+        color: red;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    45% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    75% {
+        color: white;
+    }
+
+    100% {
+        color: black
+    }
+}
+
+@-o-keyframes color-change-animation {
+    0% {
+        color: lawngreen
+    }
+
+    15% {
+        color: red;
+    }
+
+    30% {
+        color: yellow;
+    }
+
+    45% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    75% {
+        color: white;
+    }
+
+    100% {
+        color: black
+    }
+}
+
+@keyframes color-change-animation {
+    0% {
+        color: yellow
+    }
+
+    15% {
+        color: red;
+    }
+
+    30% {
+        color: teal;
+    }
+
+    45% {
+        color: green;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    75% {
+        color: blueviolet;
+    }
+
+    100% {
+        color: gold
+    }
+}
+
+hr {
     height: 10px;
     background-image: linear-gradient(90deg, transparent, black, transparent);
     border: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 .description {
     padding-top: 1rem;
-    background-color: rgba(0, 0, 0, 1);
-    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
-    h1{
+    h1 {
         font-size: 4rem;
     }
 
-    h3 a{
+    h3 a {
         color: #ffffff;
     }
-    h3 a:hover{
-        color: #ffffff;
-        text-decoration: underline;
-    }
-    h3 a:visited{
+
+    h3 a:hover {
         color: #ffffff;
         text-decoration: underline;
     }
 
-    h4 a{
-        color: #ffffff;
-    }
-    h4 a:hover{
-        color: #ffffff;
-        text-decoration: underline;
-    }
-    h4 a:visited{
+    h3 a:visited {
         color: #ffffff;
         text-decoration: underline;
     }
 
-    h5 a{
+    h4 a {
         color: #ffffff;
     }
-    h5 a:hover{
-        color: #ffffff;
-        text-decoration: underline;
-    }
-    h5 a:visited{
+
+    h4 a:hover {
         color: #ffffff;
         text-decoration: underline;
     }
-    h5{
+
+    h4 a:visited {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    h5 a {
+        color: #ffffff;
+    }
+
+    h5 a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    h5 a:visited {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    h5 {
         margin-bottom: 0px;
     }
-    
-    h1.title{
+
+    h1.title {
         font-weight: 700;
         margin-bottom: 0;
-    } 
-    h2.subtitle{
+    }
+
+    h2.subtitle {
         margin-bottom: 15px;
     }
-    h2 a{
+
+    h2 a {
         color: #ffffff;
     }
-    h2 a:hover{
+
+    h2 a:hover {
         color: #ffffff;
     }
-    h4.subtitle{
+
+    h4.subtitle {
         padding-bottom: 0;
         margin-bottom: 0;
     }
 }
 
-.screen{
+.screen {
     background-color: rgba(0, 0, 0, 1);
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.vp-title-header{
-    visibility: hidden!important;
+.vp-title-header {
+    visibility: hidden !important;
 }
 
-.row{
+.row {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.navbar{
+.navbar {
     padding: 1rem 1rem;
-    border-bottom: 5px solid #737373;
-}
-.nav-link{
-    color: #737373!important;
-}
-.nav-link:hover{
-    color: #000000!important;
-    background-color: #737373;
-}
-.nav-item{
-    font-family: 'Archivo Black', sans-serif;
-}
-.bg-black{
-    background-color: #000000!important;
+    border-bottom: 2px solid #FFFFFF;
 }
 
-.post-wrapper{
+.nav-link {
+    color: #737373 !important;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
+    background-color: #737373;
+}
+
+.nav-item {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+
+.post-wrapper {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-.post:last-of-type{
+.post:last-of-type {
     border-bottom: 0px solid #000000;
 }
 
-.post-list{
-    padding-top: 1rem;
+.post-list {
+    padding-top: 0rem;
 }
 
 .post-meta {
@@ -176,16 +309,16 @@ hr{
     color: $grey-color;
 }
 
-.post-content{
+.post-content {
     float: left;
     padding-bottom: 4rem;
 }
 
-.post-header{
+.post-header {
     padding-top: 4rem;
 }
 
-.post-title{
+.post-title {
     font-family: "Archivo Black";
 }
 
@@ -193,16 +326,16 @@ hr{
     margin-left: 0;
     list-style: none;
 
-    > li {
+    >li {
         margin-bottom: $spacing-unit;
     }
 }
 
-.post-link{
+.post-link {
     color: #000000;
 }
 
-html{
+html {
     position: relative;
     min-height: 100%;
 }
@@ -216,47 +349,86 @@ html{
     background-color: #000000;
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .footer {
         height: auto;
         line-height: inherit;
     }
 }
 
+#logo {
+    justify-content: center;
+}
 
+#about-wrapper {
+    background-color: #000000;
+}
 
-#v002{
-    .subtitle{
-        a {
-            color: #ffffff;
-        }
-        a:hover {
-            color: #ffffff;
-        }
-        a:visited {
-            color: #ffffff;
-        }
-    }
-    .description, .screen {
-        background-color: #A52A2A;
+.parallax-mirror {
+    opacity: 0.5;
+}
+
+.container {
+    max-width: 960px;
+}
+
+#where-to-find-me{
+    color: black;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    p{
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 }
 
-#v003{
-    .description{
+#v000{
+    font-family: 'Source Code Pro', monospace;
+}
+
+#v002 {
+    .subtitle {
+        a {
+            color: #ffffff;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        a:visited {
+            color: #ffffff;
+        }
+    }
+
+    .description,
+    .screen {
+        background-color: rgba(165, 42, 42, 0.6);
+    }
+}
+
+#v003 {
+    .description {
         font-family: "Josefin Slab";
         color: #000000;
+
         a {
             color: #000000;
         }
+
         a:hover {
             color: #000000;
         }
+
         a:visited {
             color: #000000;
         }
     }
-    .description, .screen {
-        background-color: #1891b8;
+
+    .description,
+    .screen {
+        background-color: rgba(24, 145, 184, 0.6);
     }
 }
