@@ -3,44 +3,39 @@ layout: default
 ---
 
 <div class="home">
-  <div id="about-wrapper" class="post-wrapper">
-    
-    <div id="where-to-find-me" class="row">
-      <div class="col-md-12">
-        <p><strong>I'm on <a href="https://www.instagram.com/right__hemisphere/"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                style="height: 1em;"></a></strong>. If you wanna work with me just send me a msg or drop me an <a
-            style="color: #000000;" href="mailto:to.right.hemisphere@gmail.com">mail</a>. Everything is possible!</p>
-      </div>
-    </div>
-    
-    <div class="container">
-      <div class="row description">
+  <div id="about-wrapper">
+    <div class="container-fluid">
+      <div id="where-to-find-me" class="row">
         <div class="col-md-12">
-          <h3><strong><span class="color-change">right hemisphere</span></strong></h3>
-          <div style="text-align: justify">
-            <h3><span style="color:#f2f2f2;">uses feeling,</span> <span style="color:#e6e6e6;">big picture
-                oriented,</span>
-              <span style="color:#d9d9d9;">imagination rules,</span> <span style="color:#cccccc;">symbols and
-                images,</span> <span style="color:#bfbfbf;">intuition,</span> <span
-                style="color:#b3b3b3;">appreciated,</span> <span style="color:#999999;">spatial perception,</span> <span
-                style="color:#8c8c8c;">knows object function,</span> <span style="color:#808080;">fantasy based,</span>
-              <span style="color:#747272;">presents possibilities,</span> <span style="color:#676767;">likely to
-                visualize
-                than think in words,</span> <span style="color:#585858;">holistic thinking,</span> <span
-                style="color:#595959;">arts,</span> <span style="color:#4d4d4d;">rhythm,</span> <span
-                style="color:#333333;">nonverbal cues,</span> <span style="color:#161616;">daydreaming...</span></h3>
+          <p><strong>I'm on <a href="https://www.instagram.com/right__hemisphere/"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            style="height: 1em;"></a></strong>. If you wanna work with me just send me a msg or drop me an <a
+            style="color: #000000;" href="mailto:to.right.hemisphere@gmail.com">mail</a>. Everything is possible!</p>
           </div>
         </div>
       </div>
 
+      <div class="container">
+        <div class="row description">
+          <div class="col-md-12">
+            <div style="text-align: justify">
+              <h3><span style="color:#f2f2f2;">pictures,</span> <span style="color:#e6e6e6;">creativity, </span>
+              <span style="color:#d9d9d9;">feelings,</span> <span style="color:#cccccc;">intuitions,</span> <span style="color:#bfbfbf;">emotions,</span> <span style="color:#b3b3b3;">symbols and images, </span> <span style="color:#aaaaaa;">free-thinking,</span> <span
+              style="color:#8c8c8c;">thoughtful,</span> <span style="color:#808080;">fanciful,</span>
+              <span style="color:#747272;">daydreaming,</span> <span style="color:#676767;">visualization, </span> <span style="color:#585858;">holistic thinking,</span> <span
+              style="color:#595959;">arts,</span> <span style="color:#4d4d4d;">rhythms,</span> <span
+              style="color:#333333;">nonverbal cues,</span> <span style="color:#424242;">...</span></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <ul class="post-list">
+      {% for post in site.categories["video"] %}
+      {{ post.content }}
+      {% endfor %}
+    </ul>
+
   </div>
-
-  <ul class="post-list">
-    {% for post in site.categories["video"] %}
-    {{ post.content }}
-    {% endfor %}
-  </ul>
-
-</div>
