@@ -131,3 +131,11 @@ a{
 a:hover{
     color: #ffffff;
 }
+
+@font-face {
+    font-family: 'Motor Oil 1937 M54';
+    src: url('/assets/fonts/MotorOil1937M54.woff2') format('woff2'),
+        url('/assets/fonts/MotorOil1937M54.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

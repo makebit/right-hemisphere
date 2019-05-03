@@ -5,37 +5,95 @@ layout: default
 <div class="home">
   <div id="about-wrapper">
     <div class="container-fluid">
-      <div id="where-to-find-me" class="row">
-        <div class="col-md-12">
-          <p><strong>I'm on <a href="https://www.instagram.com/right__hemisphere/"><img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            style="height: 1em;"></a></strong>. If you wanna work with me just send me a msg or drop me an <a
-            style="color: #000000;" href="mailto:to.right.hemisphere@gmail.com">mail</a>. Everything is possible!</p>
+      <div id="intro" class="row">
+        <div class="container">
+          <div class="col-md-12">
+
+            <div id="presentation">
+              <img id="logo" src="/assets/img/Right_Hemipshere_Logo.png" alt="Right Hemisphere logo">
+              <h1 class="rh-title">right hemisphere</h1><h2>aims to be the place where artists and creative minds can express themselves through the video medium, both in front of or behind the camera</h2>
+            </div>
+
+            <p>Do you have an idea for a video? Just send a msg <a href="https://www.instagram.com/right__hemisphere/"><img src="/assets/img/icons/instagram.svg" style="height: 1em;"></a> or drop an email <a style="color: #000000;" href="mailto:to.right.hemisphere@gmail.com"><img src="/assets/img/icons/mail.svg" style="height: 1em;"></a>, everything is possible!</p>
+
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="container">
-        <div class="row description">
-          <div class="col-md-12">
-            <div style="text-align: justify">
-              <h3><span style="color:#f2f2f2;">pictures,</span> <span style="color:#e6e6e6;">creativity, </span>
-              <span style="color:#d9d9d9;">feelings,</span> <span style="color:#cccccc;">intuitions,</span> <span style="color:#bfbfbf;">emotions,</span> <span style="color:#b3b3b3;">symbols and images, </span> <span style="color:#aaaaaa;">free-thinking,</span> <span
-              style="color:#8c8c8c;">thoughtful,</span> <span style="color:#808080;">fanciful,</span>
-              <span style="color:#747272;">daydreaming,</span> <span style="color:#676767;">visualization, </span> <span style="color:#585858;">holistic thinking,</span> <span
-              style="color:#595959;">arts,</span> <span style="color:#4d4d4d;">rhythms,</span> <span
-              style="color:#333333;">nonverbal cues,</span> <span style="color:#424242;">...</span></h3>
+  <div class="container-fluid" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <div class="row description">
+      <div class="col-md-12">
+        <div style="text-align: center; text-transform: capitalize;">
+          <h3 class="text-faded">pictures, creativity, feelings, intuitions, emotions, symbols and images, free-thinking, thoughtful, fanciful, daydreaming, visualization, holistic thinking, arts, rhythms, nonverbal cues</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="container">
+      <div class="row text-center">
+
+        <div class="col-md-12">
+          <h2 style="margin-bottom: 2rem">What We 🔴 REC</h2>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <h4 class="service-title">
+                  Artists
+                </h4>
+                <div class="service-detail">
+                  videos for artists such as dancers, bands, performers, etc.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <h4 class="service-title">
+                  Showcases / Ads
+                </h4>
+                <div class="service-detail">
+                  videos to show your business and the services you offer  
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <h4 class="service-title">
+                  Events
+                </h4>
+                <div class="service-detail">
+                  videos for events such as festivals, gigs, celebrations, etc.
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="service-item">
+                <h4 class="service-title">
+                  Tutorial
+                </h4>
+                <div class="service-detail">
+                  videos to show how your application works and can be used
+                </div>
+              </a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
-
-    <ul class="post-list">
-      {% for post in site.categories["video"] %}
-      {{ post.content }}
-      {% endfor %}
-    </ul>
-
   </div>
+</section>
+
+<ul id="videos" class="post-list">
+  {% for post in site.categories["video"] %}
+  {{ post.content }}
+  {% endfor %}
+</ul>
+
+</div>
