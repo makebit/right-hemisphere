@@ -1,20 +1,32 @@
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    padding-top: 50px;
     font-family: 'Pragati Narrow', sans-serif;
     font-size: 20px;
-    margin-bottom: 60px;
     background-color: #000000;
+    overflow-x: hidden;
+    max-width: 100%;
+    padding-bottom: 40px
+}
+
+
+.aside {
+    border-right: 3px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .aside {
+        border-bottom: 5px solid #fff;
+        border-right: 0;
+    }
 }
 
 .rh-title {
     font-family: 'Motor Oil 1937 M54';
-    font-size: 2rem;
     font-weight: normal;
     font-style: normal;
+}
+
+a.rh-title:hover {
+    text-decoration: none;
 }
 
 .color-change {
@@ -285,16 +297,17 @@ hr {
 }
 
 .nav-link {
-    color: #737373 !important;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.nav {
+    margin-left: 0;
 }
 
 .nav-link:hover {
     color: #000000 !important;
-    background-color: #737373;
-}
-
-.nav-item {
-    font-family: 'Archivo Black', sans-serif;
+    background-color: #fff;
 }
 
 .bg-black {
@@ -354,26 +367,25 @@ html {
 .footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 5vh;
     background-color: #000000;
+    width: 100%;
 }
 
-@media (max-width: 992px) {
-    .footer {
-        height: auto;
-        line-height: inherit;
-    }
-}
 
 #logo {
-    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 0.8rem;
 }
 
 #about-wrapper {
     background-color: #000000;
-    padding-top: 3rem;
 }
 
 .parallax-mirror {
@@ -385,15 +397,16 @@ html {
 }
 
 .separator-d {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%); 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
     height: 5rem;
     width: 100%;
     position: absolute;
 }
+
 .separator-t {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%); 
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
     height: 5rem;
     width: 100%;
     position: absolute;
@@ -406,29 +419,31 @@ html {
     padding-top: 3rem;
     padding-bottom: 3rem;
 
-    p{
+    p {
         margin-top: 15px;
         margin-bottom: 0;
     }
 
     #presentation {
         #logo {
-            height: 5rem;           
+            height: 5rem;
         }
     }
 }
 
 .text-faded {
-  background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(255,255,255,1) 50%, rgba(33,33,33,1) 100%); 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, rgba(33, 33, 33, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(33, 33, 33, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Services */
 
 #services {
+    margin-top: 3rem;
     padding: 3rem 0;
     background-color: white;
+    color: #000000;
 }
 
 .service-item {
@@ -445,56 +460,187 @@ html {
     background-color: black;
 }
 
-#v000{
-    font-family: 'Source Code Pro', monospace;
+/* 
+    PAGES
+*/
+.page-title {
+    color: #fff;
+    text-transform: uppercase;
 }
 
-#v001{
-    font-family: 'Cormorant Garamond', serif;
+.page {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #FFFFFF;
 }
 
-#v002 {
-    font-family: 'Cormorant Garamond', serif;
-    .subtitle {
-        a {
-            color: #ffffff;
-        }
+#about,
+#contacts,
+#stills {}
 
-        a:hover {
-            color: #ffffff;
-        }
+/*
+    YT
+*/
 
-        a:visited {
-            color: #ffffff;
-        }
-    }
+.youtube {
+    width: 100%;
+    height: 95vh;
+}
 
-    .description,
-    .screen {
-        background-color: rgba(165, 42, 42, 0.6);
+@media screen and (max-width: 768px) {
+    .youtube {
+        height: auto;
     }
 }
 
-#v003 {
-    .description {
-        font-family: "Josefin Slab";
-        color: #000000;
 
-        a {
-            color: #000000;
-        }
+.youtube img {
+    width: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
 
-        a:hover {
-            color: #000000;
-        }
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
 
-        a:visited {
-            color: #000000;
-        }
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* 
+    VIDEOS
+*/
+
+.carousel-control-prev-icon {
+    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    // background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover {
+    transition: all 500ms ease-in-out;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 8%;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    right: auto;
+    left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption {
+        position: relative;
     }
+}
 
-    .description,
-    .screen {
-        background-color: rgba(24, 145, 184, 0.6);
+.video-data {
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+}
+
+.video-title {}
+
+.video-desc {
+    a {
+        color: #fff;
     }
+}
+
+
+/*
+    STILLS
+*/
+.thumb {
+    margin-bottom: 30px;
+}
+
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    color: #000;
+}
+
+.modal-footer {
+    display: none;
 }
