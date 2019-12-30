@@ -12,27 +12,38 @@ layout: default
         {% else %}
           <div class="carousel-item ">
         {% endif %}
-          <div class="youtube embed-responsive embed-responsive-16by9" data-embed="{{ post.videoid }}">
-            <div class="play-button"></div>
-          </div>
+            <div class="youtube embed-responsive embed-responsive-16by9" data-embed="{{ post.videoid }}">
+              <div class="play-button"></div>
+            </div>
 
-          <div class="carousel-caption video-data">
-            <h1 class="video-title mb-0">{{ post.title }}</h1>
-            <h5 class="video-desc mb-0 ">{{ post.desc }}</h5>
-            <h5 class="video-music mb-0">🎵 {{ post.music }}</h5>
-            {% if post.shooting %} <h5 class="video-shooting mb-0">Shooting: {{ post.shooting }}</h5> {% endif %}
-            {% if post.editing %} <h5 class="video-editing mb-0">Editing: {{ post.editing }}</h5> {% endif %}
-          </div>
+
+            <div class="col-md-12 controls-sm pb-4 text-center">
+                <a class="btn btn-primary btn-lg" href="#carouselVideosControls" role="button" data-slide="prev">
+                  <span>« prev</span>
+                </a>
+                <a class="btn btn-primary btn-lg" href="#carouselVideosControls" role="button" data-slide="next">
+                  <span>next »</span>
+                </a>
+            </div>
+            <div class="carousel-caption video-data">
+              <h1 class="video-title mb-0">{{ post.title }}</h1>
+              <h5 class="video-desc mb-0 ">{{ post.desc }}</h5>
+              <h5 class="video-music mb-0">🎵 {{ post.music }}</h5>
+              {% if post.shooting %} <h5 class="video-shooting mb-0">Shooting: {{ post.shooting }}</h5> {% endif %}
+              {% if post.editing %} <h5 class="video-editing mb-0">Editing: {{ post.editing }}</h5> {% endif %}
+                
+            </div>
         </div>
     {% endfor %}
     </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselVideosControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselVideosControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <div class="controls-xl">
+      <a class="carousel-control-prev" href="#carouselVideosControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselVideosControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 </div>
