@@ -17,7 +17,7 @@ layout: default
             </div>
 
 
-            <div class="col-md-12 controls-sm pb-4 text-center">
+            <div class="col-md-12 controls-sm pb-4 text-center mt-4">
                 <a class="btn btn-primary btn-lg" href="#carouselVideosControls" role="button" data-slide="prev">
                   <span>« prev</span>
                 </a>
@@ -28,7 +28,7 @@ layout: default
             <div class="carousel-caption video-data">
               <h1 class="video-title mb-0">{{ post.title }}</h1>
               <h5 class="video-desc mb-0 ">{{ post.desc }}</h5>
-              <h5 class="video-music mb-0">🎵 {{ post.music }}</h5>
+              {% if post.music %} <h5 class="video-music mb-0">🎵 {{ post.music }}</h5> {% endif %}
               {% if post.shooting %} <h5 class="video-shooting mb-0">Shooting: {{ post.shooting }}</h5> {% endif %}
               {% if post.editing %} <h5 class="video-editing mb-0">Editing: {{ post.editing }}</h5> {% endif %}
                 
