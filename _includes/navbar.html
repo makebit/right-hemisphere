@@ -1,0 +1,32 @@
+<div id="topnav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid justify-content-md-center">
+      <a class="navbar-brand mx-auto mt-2" href="/">
+        <img src="/assets/img/right_hemisphere_logo.png" alt="right hemisphere logo" style="height: 8rem;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+    <div class="container-fluid justify-content-md-center">
+      <div class="navbar-collapse justify-content-md-center collapse" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-link {% if page.url == '/' %}active{% endif %}" aria-current="page" href="/">Showcase</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/stills/' %}active{% endif %}" aria-current="page" href="/stills">Stills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/about/' %}active{% endif %}" aria-current="page" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.url == '/contacts/' %}active{% endif %}" aria-current="page" href="/contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

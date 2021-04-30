@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="it">
+  {% include head.html %}
+  
+  <body>
+    {% include navbar.html %}
 
-{% include head.html %}
+    {{ content }}
 
-<body>
-  <div class="container-fluid pl-0 pr-0">
-    <div class="row">
-
-      <div class="col-md-2 pt-4 aside">
-        {% include aside.html %}
-      </div>
-
-      <div class="col-md-10 pl-0 pr-0">
-
-        {{ content }}
-        
-      </div>
-    </div>
-  </div>
-
-  {% include footer.html %}
-
-</body>
-
+    {% include footer.html %}
+  </body>
 </html>

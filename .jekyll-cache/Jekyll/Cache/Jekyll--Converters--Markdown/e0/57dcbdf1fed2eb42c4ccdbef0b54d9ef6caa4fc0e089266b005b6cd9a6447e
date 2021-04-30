@@ -1,0 +1,47 @@
+I"(<p><img src="/assets/projects/tlapse/compressed/timelapse_1.JPG" alt="" />
+<img src="/assets/projects/tlapse/compressed/timelapse_2.JPG" alt="" /></p>
+
+<p>TLapse è lo strumento portatile auto costruito per la registrazione di timelapse in movimento (hyperlapse) sull’asse di pan. E’ adatto ad action cam tipo GoPro, Yi, ecc.</p>
+
+<p>Permette di registrare timelapse parametrizzati secondo</p>
+<ul>
+  <li>durata del timelapse</li>
+  <li>angolo di rotazione</li>
+  <li>intervallo tra uno scatto e l’altro</li>
+</ul>
+
+<p>Componenti utilizzati (tutti reperibili ad esempio su Aliexpress):</p>
+<ul>
+  <li>Wemos D1 Mini</li>
+  <li>Wemos Battery Shield</li>
+  <li>Servo motore 180°</li>
+  <li>Batteria 1200 mah</li>
+  <li>Pulsante On/Off</li>
+</ul>
+
+<p>Caratteristiche principali:</p>
+<ul>
+  <li>dimensioni contenute: 75 x 70 x 50 mm</li>
+  <li>portatile grazie alla batteria ricaricabile tramite micro usb</li>
+  <li>programmabile attraverso connessione WiFi senza necessità di installare alcuna applicazione</li>
+  <li>possibilità di montaggio su cavalletto</li>
+</ul>
+
+<p>Utilizzo:</p>
+<ol>
+  <li>accensione TLapse</li>
+  <li>connessione a TLapse tramite WiFi</li>
+  <li>settaggio durata timelapse in minuti, angolo di rotazione e intervallo</li>
+  <li>fine!</li>
+</ol>
+
+<hr />
+
+<p><a style="color:red;" href="https://github.com/makebit/TLapse/">Repository</a></p>
+
+<p>Scatola stampata con stampante 3D (progettata con SketchUp): <a style="color:red;" href="https://github.com/makebit/TLapse/blob/master/3D%20Model/Timelapse.skp">Download</a></p>
+
+<p>Codice software (Arduino): <a style="color:red;" href="https://github.com/makebit/TLapse/blob/master/Code/Timelapse/Timelapse.ino">Download</a></p>
+
+<p>Per ulteriori informazioni contattami <a href="mailto:to.right.hemisphere@gmail.com">to.right.hemisphere@gmail.com</a></p>
+:ET

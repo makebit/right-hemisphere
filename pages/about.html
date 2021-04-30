@@ -1,63 +1,48 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-<div id="about" class="page">
-    <h2>Right Hemisphere aims to be the place where artists and creative minds can express themselves through the video
-        medium, both in front of or behind the camera.</h2>
-
+<div id="about" class="container">
     <section id="services">
-        <div class="container">
-            <div class="row text-center">
+        <div class="row text-center intro-container mb-2">
+            <div class="col">
+                <span class="title-text">WE 🔴 REC </span><span class="replace-me title-text">festivals, <span style="display:none">products showcase, short documentaries, artists, celebrations, events, singers, performers, advertisement, parties, campaigns</span></span>
+            </div>      
+        </div>
 
-                <div class="col-md-12">
-                    <h1 style="margin-bottom: 2rem">What we 🔴 REC</h1>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4 class="service-title">
-                                    Artists
-                                </h4>
-                                <div class="service-detail">
-                                    videos for artists such as dancers, bands, performers, etc.
-                                </div>
-                            </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="service-item">
+                    <div class="card">
+                        <img src="/assets/img/services/artists.jpg" class="card-img-top" alt="artists videos">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Artisti</h5>
+                            <p class="card-text">Video per cantanti, ballerini, performer, gruppi musicali</p>
                         </div>
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4 class="service-title">
-                                    Showcases / Ads
-                                </h4>
-                                <div class="service-detail">
-                                    videos to show your business, products and the services you offer
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service-item">
+                    <div class="card">
+                        <img src="/assets/img/services/ads.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Showcases & Ads</h5>
+                            <p class="card-text">Video pubblicitari per aziende e showcase prodotti</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="service-item">
+                    <div class="card">
+                        <img src="/assets/img/services/events.jpg" class="card-img-top" alt="events videos">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Eventi</h5>
+                            <p class="card-text">Video per eventi, festival, concerti, feste, celebrazioni</p>
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4 class="service-title">
-                                    Events
-                                </h4>
-                                <div class="service-detail">
-                                    videos for events such as festivals, gigs, celebrations, etc.
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4 class="service-title">
-                                    Tutorial
-                                </h4>
-                                <div class="service-detail">
-                                    videos to show how your software / app works and can be used
-                                </div>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -65,5 +50,21 @@ permalink: /about/
         </div>
     </section>
 
+    <section id="collaborations">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="mb-2 title-text">Collaborazioni</h3>
+            </div>
+        </div>
 
+        <div class="row">
+            {% for image in site.static_files %}
+            {% if image.path contains 'assets/img/collaborations' %}
+            <div class="col-md-4 col-sm-4 d-flex align-items-center justify-content-center p-3">
+                <img class="img-fluid" src="{{ site.baseurl }}{{ image.path }}" style="max-width: 10rem" />
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
 </div>

@@ -1,77 +1,42 @@
-var fullHeight = function () {
-    if ($(window).width() > 1080) {
-        var newH;
-        if ($("#menu").height() > $(window).height()){
-            newH = $("#menu").height();
-        } else {
-            newH = $(window).height();
-        }
-
-        $('.js-fullheight').css('height', newH);
-        $(window).resize(function () {
-            $('.js-fullheight').css('height', newH);
-        });
-    } else {
-        var footerHeight = $('.footer').height();
-        console.log(footerHeight)
-        $('.js-fullheight').css('height', $('.js-fullheight').height() + footerHeight*3);
-        $(window).resize(function () {
-            $('.js-fullheight').css('height', $('.js-fullheight').height()  + footerHeight*3);
-        });
-    }
-
-};
-
-fullHeight();
-
-
-// Init carousel
-$('.carousel').carousel({
-    interval: false
-})
-// Init variables
-var videos = []
-var currentVideo = 0;
-
-// Events fired when the carousel is slided
-$('.carousel').on('slid.bs.carousel', function (e) {
-    // show the carousel captions
-    $(".carousel-caption").show();
-
-    // Reset the previous or next video
-    if (e.direction == "left") {
-        videos[currentVideo].html('<div class="play-button"></div>')
-        loadThumbnail(videos[currentVideo])
-        currentVideo = (currentVideo + 1) % (videos.length);
-    } else {
-        videos[currentVideo].html('<div class="play-button"></div>')
-        loadThumbnail(videos[currentVideo])
-        currentVideo--;
-        if (currentVideo < 0) {
-            currentVideo = videos.length - 1
-        }
-    }
-})
+let videos = []
 
 $(document).ready(function () {
     // Init videos and load all thumbs
     $('.youtube').each(function (index, value) {
-        console.log($(this))
+        //console.log($(this))
         videos.push($(this))
         loadThumbnail($(this))
     });
 
-    // Init fancybox
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
+    $("img.lazyload").lazyload({effect : "fadeIn"});
+
+    /*
+    // Wrap every letter in a span
+    var textWrappers = document.querySelectorAll('.ml7 .letters');
+    textWrappers.forEach(function(textWrapper) {
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     });
-    // Init gallery transitions
-    $(".zoom").hover(function () {
-        $(this).addClass('transition');
-    }, function () {
-        $(this).removeClass('transition');
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml7 .letter',
+        translateY: ["1.1em", 0],
+        translateX: ["0.55em", 0],
+        translateZ: 0,
+        rotateZ: [180, 0],
+        duration: 300,
+        easing: "easeOutExpo",
+        delay: (el, i) => Math.random()*100 * i
+    });*/
+
+    AOS.init({
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        delay: 1000
     });
+
+    var replace = new ReplaceMe(document.querySelector('.replace-me'));
+
+    $('.full-height').fullHeight($("#topnav").height());
 });
 
 // Load the thumbnail of the obj object
@@ -80,15 +45,7 @@ function loadThumbnail(obj) {
     var videoId = obj[0].dataset.embed
     var src = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
 
-    // Load the image asynchronously
-    var image = new Image();
-    image.src = src;
-    image.class = "d-block w-100"
-    image.addEventListener("load", function () {
-        // When the image is loaded append it to the div
-        // obj.css('background-image', 'url(' + src + ')')
-        obj.append(image);
-    });
+    obj.append('<img class="lazyload" data-src="' + src + '">');
 
     // Init the click event
     obj[0].addEventListener("click", function () {

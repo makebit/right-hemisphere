@@ -1,16 +1,19 @@
 <footer class="footer">
-  <div class="container">
-    
-    <p class="m-0 text-center text-white">© {{ 'now' | date: "%Y" }} {{ site.title }} //
-      <a style="color: white;" href="mailto:{{ site.email }}">{{ site.email }}</a> // <a
-        href="https://www.instagram.com/right.hemisphere.video/"><img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="height: 1em;"></a> </li>
-    </p>
-  </div>
+	<div class="container-fluid bg-dark text-white">
+		<div class="row text-center">
+			<div class="col">
+				<p class="m-4">© {{ 'now' | date: "%Y" }} - {{ site.title }}</p>
+			</div>
+		</div>
+	</div>
 </footer>
 
-<script src="/assets/vendor/jquery/jquery.min.js"></script>
-<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="/assets/vendor/parallaxjs/parallax.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/js/replaceme.js"></script>
+<script src="/js/fullHeight.js"></script>
 <script src="/js/main.js"></script>
