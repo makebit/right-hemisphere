@@ -46,6 +46,7 @@ a:active {
 }
 
 .nav-item {
+  padding-right: 2rem;
 	text-transform: uppercase;
 }
 
@@ -154,4 +155,42 @@ footer {
 
 .youtube:hover + .img-extra::after {
   left: 0;
+}
+
+#home-text {
+  position: absolute;
+}
+
+#home-video {
+  z-index: -1;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+
+  video {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #home-text {
+    position: relative;
+  }
+
+  #home-video {
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .full-height {
+    height: inherit !important;
+  }
+}
+
+#about {
+  margin-top: 4rem;
+}
+
+#services, #contacts {
+  margin-bottom: 4rem;
 }

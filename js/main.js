@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     AOS.init({
         duration: 1000, // values from 0 to 3000, with step 50ms
-        delay: 1000
+        delay: 0
     });
 
     var replace = new ReplaceMe(document.querySelector('.replace-me'));
