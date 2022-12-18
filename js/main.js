@@ -43,7 +43,11 @@ $(document).ready(function () {
 function loadThumbnail(obj) {
     // Load the thumbnail image source
     var videoId = obj[0].dataset.embed
-    var src = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
+    if(obj[0].dataset.thumbnail) {
+        var src = obj[0].dataset.thumbnail
+    } else {
+        var src = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
+    }
 
     obj.append('<img class="lazyload" data-src="' + src + '">');
 

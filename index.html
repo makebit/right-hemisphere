@@ -41,7 +41,7 @@ layout: default
 		<div class="video" data-aos="fade-right">
 			<div class="row">
 				<div class="col-sm">
-					<div class="youtube ratio ratio-16x9" data-embed="{{ post.videoid }}">
+					<div class="youtube ratio ratio-16x9" data-embed="{{ post.videoid }}" {% if post.thumbnail %} data-thumbnail="{{ post.thumbnail }}{% endif %}">
 						<div class="play-button"></div>
 					</div>
 					<div class="img-extra"></div>
