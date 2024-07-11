@@ -1,0 +1,61 @@
+body { font-family: 'Lexend', sans-serif; background-color: #000; color: #fff; }
+
+a { color: #fff; text-decoration: none; }
+
+a:link { color: #fff; text-decoration: none; }
+
+a:visited { color: #fff; text-decoration: none; }
+
+a:hover { color: #fff; text-decoration: underline; }
+
+.nav-item a:hover { text-decoration: none; }
+
+a:active { color: #fff; text-decoration: underline; }
+
+.container, .container-lg, .container-md, .container-sm, .container-xl { max-width: 960px !important; }
+
+.bg-dark { background-color: #2b2b2b !important; }
+
+.nav-item { padding-right: 2rem; text-transform: uppercase; }
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link { color: #dd2e44; }
+
+.youtube img { width: 100%; height: 100%; cursor: pointer; }
+
+.youtube iframe { width: 100%; top: 0; left: 0; }
+
+/* .intro-container { margin-top: 4rem; margin-bottom: 4rem; } .video:first-child { padding-top: 0rem; }*/
+.video { padding-top: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #dd2e44; }
+
+.video .video-title { color: #dd2e44; padding-top: 1rem; padding-bottom: 1rem; background-color: #000; }
+
+#services, #collaborations { margin-bottom: 4rem; }
+
+.home-title-text { font-weight: 900; font-size: 4em; }
+
+.title-text { font-weight: 900; font-size: 1.5em; }
+
+/* .ml7 { position: relative; font-weight: 900; font-size: 1.5em; } .ml7 .text-wrapper { position: relative; display: inline-block; padding-top: 0.2em; padding-right: 0.05em; padding-bottom: 0.1em; overflow: hidden; } .ml7 .letter { transform-origin: 0 100%; display: inline-block; line-height: 1em; }*/
+footer { margin-top: 3rem; }
+
+footer p { margin: 1rem; }
+
+.img-extra::after { left: -50px; }
+
+.img-extra::after { display: block; padding: 0 10px; content: "click to play"; position: absolute; left: -25px; top: 150px; font-size: 14px; font-family: monospace; color: #fff; text-align: center; background: #333; transform-origin: 0 0; transform: rotate(270deg); transition: 0.5s ease-in-out; z-index: -1; }
+
+.youtube:hover + .img-extra::after { left: 0; }
+
+#home-text { position: absolute; }
+
+#home-video { z-index: -1; opacity: 0.5; overflow: hidden; width: 100%; }
+
+#home-video video { width: 100%; }
+
+@media only screen and (max-width: 992px) { #home-text { position: relative; } #home-video { z-index: 1; opacity: 1; } .full-height { height: inherit !important; } }
+
+#about { margin-top: 4rem; }
+
+#services, #contacts { margin-bottom: 4rem; }
+
+/*# sourceMappingURL=main.css.map */
